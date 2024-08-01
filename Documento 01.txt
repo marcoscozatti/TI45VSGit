@@ -1,0 +1,27 @@
+git init
+git config --global user.name ""
+git config --global user.email ""
+git config --list
+
+git clone http://github.com/TI45vsgit.git
+
+git remote add origin http://github.com/TI45vsgit.git
+git pull origin main
+
+git remote add origin http://github.com/TI45vsgit.git
+git add .
+git commite -m "mensagem da versão do seu programa"
+git push -u origin main
+
+git log 
+git log --oneline
+
+git checkout HEAD~1 (vai para o comite anterior) 
+git checkout main   (volta ao estado do ultimo comite)
+
+
+Definitivo (destrutivo)
+git reset --hard HEAD~1
+
+
+
