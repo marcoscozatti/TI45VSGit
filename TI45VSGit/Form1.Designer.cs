@@ -35,20 +35,23 @@
             this.lbTotal = new System.Windows.Forms.Label();
             this.lbResultado = new System.Windows.Forms.Label();
             this.btnSoma = new System.Windows.Forms.Button();
+            this.btnSubtracao = new System.Windows.Forms.Button();
+            this.btnMultiplicacao = new System.Windows.Forms.Button();
+            this.btnDivisao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txValor1
             // 
-            this.txValor1.Location = new System.Drawing.Point(121, 42);
+            this.txValor1.Location = new System.Drawing.Point(124, 45);
             this.txValor1.Name = "txValor1";
-            this.txValor1.Size = new System.Drawing.Size(100, 20);
+            this.txValor1.Size = new System.Drawing.Size(244, 20);
             this.txValor1.TabIndex = 0;
             // 
             // txValor2
             // 
-            this.txValor2.Location = new System.Drawing.Point(121, 79);
+            this.txValor2.Location = new System.Drawing.Point(124, 82);
             this.txValor2.Name = "txValor2";
-            this.txValor2.Size = new System.Drawing.Size(100, 20);
+            this.txValor2.Size = new System.Drawing.Size(244, 20);
             this.txValor2.TabIndex = 1;
             // 
             // lblValor1
@@ -97,11 +100,44 @@
             this.btnSoma.UseVisualStyleBackColor = true;
             this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
+            // btnSubtracao
+            // 
+            this.btnSubtracao.Location = new System.Drawing.Point(131, 151);
+            this.btnSubtracao.Name = "btnSubtracao";
+            this.btnSubtracao.Size = new System.Drawing.Size(75, 23);
+            this.btnSubtracao.TabIndex = 7;
+            this.btnSubtracao.Text = "Subtração";
+            this.btnSubtracao.UseVisualStyleBackColor = true;
+            this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
+            // 
+            // btnMultiplicacao
+            // 
+            this.btnMultiplicacao.Location = new System.Drawing.Point(212, 151);
+            this.btnMultiplicacao.Name = "btnMultiplicacao";
+            this.btnMultiplicacao.Size = new System.Drawing.Size(75, 23);
+            this.btnMultiplicacao.TabIndex = 8;
+            this.btnMultiplicacao.Text = "Multiplicação";
+            this.btnMultiplicacao.UseVisualStyleBackColor = true;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
+            // 
+            // btnDivisao
+            // 
+            this.btnDivisao.Location = new System.Drawing.Point(293, 151);
+            this.btnDivisao.Name = "btnDivisao";
+            this.btnDivisao.Size = new System.Drawing.Size(75, 23);
+            this.btnDivisao.TabIndex = 9;
+            this.btnDivisao.Text = "Divisão";
+            this.btnDivisao.UseVisualStyleBackColor = true;
+            this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(424, 226);
+            this.Controls.Add(this.btnDivisao);
+            this.Controls.Add(this.btnMultiplicacao);
+            this.Controls.Add(this.btnSubtracao);
             this.Controls.Add(this.btnSoma);
             this.Controls.Add(this.lbResultado);
             this.Controls.Add(this.lbTotal);
@@ -110,6 +146,7 @@
             this.Controls.Add(this.txValor2);
             this.Controls.Add(this.txValor1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,6 +162,9 @@
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label lbResultado;
         private System.Windows.Forms.Button btnSoma;
+        private System.Windows.Forms.Button btnSubtracao;
+        private System.Windows.Forms.Button btnMultiplicacao;
+        private System.Windows.Forms.Button btnDivisao;
     }
 }
 

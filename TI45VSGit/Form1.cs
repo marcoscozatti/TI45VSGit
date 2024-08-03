@@ -29,5 +29,44 @@ namespace TI45VSGit
 
 
         }
+
+        private void btnSubtracao_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 - var2;
+
+            lbResultado.Text = total.ToString();
+
+
+        }
+
+        private void btnMultiplicacao_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 * var2;
+
+            lbResultado.Text = total.ToString();
+
+
+        }
+
+        private void btnDivisao_Click(object sender, EventArgs e)
+        {
+            int var1, var2, total;
+            var1 = int.Parse(txValor1.Text);
+            var2 = int.Parse(txValor2.Text);
+
+            total = var1 / var2;
+
+            lbResultado.Text = total.ToString();
+
+
+        }
     }
 }
